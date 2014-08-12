@@ -19,8 +19,7 @@ public class LivingSpace {
 	public LivingSpace(int size)
 	{
 		this.MapSize =size;				
-		Init();
-		
+		Init();		
 	}
 	// Produce maps
 	private void Init()

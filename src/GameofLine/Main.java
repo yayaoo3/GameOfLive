@@ -15,7 +15,7 @@ public class Main {
 		
 		LivingSpace ls = new LivingSpace(30);//環境大小	
 		ls.InitBio(450);//亂數生成生物
-		 
+		
 	       for(int i=0;i<100;i++)       
 	       {	    	
 	       ls.showmap();	 //展示環境 生物      

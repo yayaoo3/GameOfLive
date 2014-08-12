@@ -31,6 +31,7 @@ public class Bio {
 		while(true)
 		{				
 			NewBioPos[2]=0;
+			//產生0~2 數字  對SurBioPosStatus做確認
 				int RandomRow=(int)(Math.random()*3)-1;
 				int RandomColumn=(int)(Math.random()*3)-1;
 				
@@ -46,12 +47,11 @@ public class Bio {
 					break;
 				}	
 				
-				
 			  	ss++;
-				if(ss>=50)				
+				if(ss>=50)	//無法繁衍成功 自斷迴圈	
 				{		
-					NewBioPos[2]=1;
-					//	測試 建議用3*3 出生點被卡位!
+					NewBioPos[2]=1;  //出生點被卡位!
+					//	測試 建議用3*3 
 					/*  Scanner input = new Scanner(System.in);  
 					  System.out.print("shit.");
 					  input.hasNextLine();
@@ -67,12 +67,12 @@ public class Bio {
 	{
 		SurBioPosStatus[1][0][1]=0;		//已死亡		
 	}	
-    //是否生存
+    //取得是否生存資料
 	public int getAlive()
 	{		
 		return SurBioPosStatus[1][0][1];
 	}	
-	//取得生物動作資訊
+	//取得生物下世代動作資訊
 	public int getAction()
 	{		
 		return SurBioPosStatus[1][1][1];
